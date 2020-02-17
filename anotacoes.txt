@@ -1,0 +1,76 @@
+
+Diretorios e arquivos dentro do laravel para que server
+
+Arquivos Importantes:
+Já na raiz do framework podemos notar alguns arquivos, agora vamos analisar os principais e suas funcionalidades.
+
+
+
+.env:
+
+Este arquivo ficam informações sensíveis, informações de senha e configuração do sistema. O propósito deste arquivo é manter os dados de senha armazenados de forma mais segura possível.
+
+
+
+artisan:
+
+É o grande amigo do(a) desenvolver(a) Laravel, este arquivo provê uma interface CLI (Command Line Interface) onde é possível rodar comandos e automatizar e simplificar diversas tarefas, como por exemplo criar Controllers, Models e mutio mais.
+
+ php artisan list
+com essa comando você que todos os comando de auxilio do artisan
+Cada comando também inclui uma tela de "ajuda" que exibe e descreve os argumentos e opções disponíveis do comando. Para visualizar uma tela de ajuda, anteceda o nome do comando com help:
+exemplo: php artisan help migrate
+
+Laravel REPL
+Todas as aplicações do Laravel incluem o Tinker, um REPL alimentado pelo pacote PsySH . O Tinker permite que você interaja com todo o aplicativo Laravel na linha de comando, incluindo o ORM Eloquent, tarefas, eventos e muito mais. Para entrar no ambiente do Tinker, execute o tinkercomando Artisan:
+
+composer.json:
+
+Para quem já trabalha com o composer está familiarizado com este arquivo, este arquivo mantém as informações dependências do projeto (pacotes de terceiros), possui informações sobre o carregamento de Classes e arquivos (autoload) e ainda contém algumas configurações para rodar alguns scripts. Saiba mais sobre o composer.
+
+
+
+package.json:
+
+Esse arquivo segue a mesma linha de raciocínio do arquivo composer.json, porém ele é para definir dependências de pacotes JS
+
+
+
+webpack.mix.js:
+
+Este arquivo é de configuração do webback, neste arquivo é possível definir as configuração para compactação e unificação de arquivos css e js, com Laravel MIX.
+
+
+App: Fica todod o core da aplicação e suas classes
+é aonde trabalhamos controles e models
+
+Bootstrap?:
+Inicia o Laravel
+
+Config
+
+
+Factories criam dados falsos para teste
+e o seeds semeiam esses dados
+
+Migrations e responsavel por criar o banco de dados
+
+Resouces trabalha o front end
+
+
+No arquivo .env podemos encontrar as variaveis de ambientes
+aonde podemos definir valores e depois solicitar usando o blade
+
+
+o Laravek já vem com um sistema de autenticação pronto, no laravel 5.x
+basta você digitar "php artisan make: auth"
+porem no laravel 6 é preciso instalar a dependencia laravel ui
+através do comando
+
+composer require laravel/ui
+após intalado use i comando
+php artisan ui:auth
+
+
+
+
